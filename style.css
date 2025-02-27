@@ -1,0 +1,734 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Big Shoulders Display", serif;
+  font-size: 16px;
+}
+
+:root {
+  --brown: #d5966c;
+  --black: #151515;
+  --white: #fff;
+  --gray: #444;
+}
+
+.h-xl {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+  text-transform: uppercase;
+}
+
+.h-l {
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.h-m {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.h {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.body-m {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.body-s {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #151515;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__graphics--black-board {
+  background-color: #151515;
+}
+
+.hero__title {
+  color: #151515;
+}
+
+.hero__description {
+  font-family: "Outfit";
+  color: #444444;
+}
+
+.hero__button__container {
+  transition: 1s;
+  cursor: pointer;
+  display: flex;
+  width: 260px;
+  height: 72px;
+}
+
+.hero__button__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 1s;
+  width: 204px;
+  height: 72px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+}
+
+.hero__button-icon {
+  background-color: #d5966c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+  width: 56px;
+  height: 72px;
+}
+
+.hero__button__container:hover .hero__button__text {
+  background-color: #d5966c;
+}
+
+.hero__button__container:hover .hero__button-icon {
+  background-color: #151515;
+}
+
+.grid-top__title {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #151515;
+}
+
+.grid-top__description {
+  font-family: "Outfit";
+  font-weight: 300;
+  color: #444;
+}
+
+.footer {
+  padding: 30px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #151515;
+}
+
+.footer__description {
+  font-family: "Outfit";
+  font-weight: 300;
+  margin-block: 30px;
+}
+
+.footer__logo {
+  width: 110.05px;
+  height: 40px;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.social__icon {
+  transition: 1s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.social__icon:hover {
+  color: #d5966c;
+}
+
+.location__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map__container {
+  width: auto;
+  height: 70%;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+
+.hero__button__container.location__button {
+  position: absolute;
+}
+
+.location__container {
+  background-color: #151515;
+}
+
+.location__content {
+  padding: 15px 10px;
+  width: 100%;
+  background-color: #151515;
+  color: #fff;
+}
+
+.location__title {
+  margin-block: 20px;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.location__subtitle {
+  margin-block: 20px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #d5966c;
+}
+
+.location__list,
+.location__description {
+  list-style-type: none;
+  width: 85%;
+  margin-block: 20px;
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.footer__description.footer-location__description {
+  color: #151515;
+}
+
+.social__icon.social__icon-location {
+  cursor: pointer;
+  transition: 1s;
+  color: #151515;
+}
+
+.social__icon.social__icon-location:hover {
+  color: #fff;
+}
+
+.footer.footer-location {
+  background-color: #d5966c;
+}
+
+@media only screen and (max-width: 767.99999px) {
+  .hero {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero__title {
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #151515;
+  }
+
+  .hero__graphics {
+    height: auto;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .hero__graphics--image {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .hero__content {
+    margin: 10px;
+  }
+
+  .hero__title {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    text-transform: uppercase;
+  }
+
+  .hero__description {
+    margin-block: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .grid-top {
+    margin: 10px 10px;
+  }
+
+  .image-1__container {
+    max-width: 100vw;
+  }
+
+  .image-1 {
+    max-width: 100%;
+  }
+
+  .grid-top__title {
+    width: 70%;
+    margin-block: 30px;
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  .grid-top__description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .grid {
+    margin: 10px 10px;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-2__container,
+  .image-3__container {
+    margin: 10px 10px;
+    max-width: 100vw;
+    width: 90%;
+    height: auto;
+  }
+
+  .image-2,
+  .image-3 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .come-be-inspired {
+    padding: 40px 30px;
+    margin: 10px 10px 100px;
+    background-color: #151515;
+    color: #fff;
+    width: 90vw;
+    height: 100%;
+  }
+
+  .come-be-inspired__title {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .come-be-inspired__description {
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .footer.footer-location {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024.99999px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .hero__title {
+    font-size: 70px;
+    line-height: 65px;
+  }
+
+  .hero__graphics--picture {
+    display: block;
+    width: 60vw;
+    height: auto;
+  }
+
+  .hero__graphics--image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero__content {
+    position: absolute;
+    top: 20%;
+    left: 54%;
+    width: 50%;
+  }
+
+  .hero__title {
+    margin-bottom: 100px;
+    height: 80px;
+    font-size: 70px;
+    line-height: 65px;
+    color: #151515;
+  }
+
+  .hero__description {
+    margin-bottom: 60px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+  }
+
+  .grid-top {
+    margin: 100px 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .image-1__container {
+    min-width: 398px;
+    width: 398px;
+    height: auto;
+  }
+
+  .image-1 {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .grid-top__text {
+    width: 80%;
+  }
+
+  .grid-top__title {
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  .grid-top__description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444;
+  }
+
+  .grid {
+    overflow-y: hidden;
+    margin-inline: auto;
+    gap: 10px;
+    width: 90%;
+    max-height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "image-2 image-3"
+      "image-2 come-be-inspired";
+  }
+
+  .image-2__container {
+    grid-area: image-2;
+    height: 720px;
+  }
+
+  .image-3__container {
+    grid-area: image-3;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-2,
+  .image-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .come-be-inspired {
+    padding: 70px 30px;
+    grid-area: come-be-inspired;
+    background-color: #151515;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .come-be-inspired__title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+
+  .come-be-inspired__description {
+    width: 80%;
+    margin-top: 20px;
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .footer {
+    height: 216px;
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer__description {
+    margin-block: 0;
+    width: 40%;
+  }
+
+  .hero__button__container.location__button {
+    left: 50px;
+  }
+
+  .location__content {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+  }
+
+  .footer.footer-location {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero__graphics {
+    display: block;
+    background-color: #151515;
+    width: 30vw;
+    height: 100vh;
+  }
+
+  .hero__content {
+    gap: 175px;
+    margin: 10% 4.9%;
+    width: 83%;
+    display: flex;
+    position: absolute;
+  }
+
+  .hero__title {
+    margin-left: 6.5vw;
+    width: 100%;
+    font-size: 96px;
+    line-height: 88px;
+  }
+
+  .hero__title__modern {
+    background-image: linear-gradient(90deg, #fff 94.4%, #151515 5.6%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .hero__title__art__gallery {
+    background-image: linear-gradient(90deg, #fff 64%, #151515 36%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .hero__description {
+    width: 78%;
+    font-family: "Outfit", serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    color: #444;
+    margin-bottom: 100px;
+  }
+
+  .hero__graphics--picture {
+    margin-left: 30vw;
+  }
+
+  .hero__graphics--image {
+    height: 100vh;
+    width: auto;
+  }
+
+  .grid-top {
+    width: 80%;
+    margin: 150px auto 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .image-1__container {
+    width: 635px;
+    height: auto;
+  }
+
+  .image-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid-top__text {
+    gap: 100px;
+    width: 40%;
+  }
+
+  .grid-top__title {
+    width: 70%;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .grid-top__description {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .grid {
+    overflow-y: hidden;
+    margin-inline: auto;
+    gap: 40px;
+    width: 80%;
+    max-height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "image-2 image-3"
+      "image-2 come-be-inspired";
+  }
+
+  .image-2__container {
+    grid-area: image-2;
+    width: 635px;
+    height: 720px;
+  }
+
+  .image-3__container {
+    grid-area: image-3;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-2,
+  .image-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .come-be-inspired {
+    padding: 50px;
+    grid-area: come-be-inspired;
+    background-color: #151515;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .come-be-inspired__title {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+
+  .come-be-inspired__description {
+    margin-top: 20px;
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .footer {
+    padding: 100px;
+    height: 244px;
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer__logo {
+    width: 159.57px;
+    height: 58px;
+  }
+
+  .footer__description {
+    font-size: 18px;
+    line-height: 28px;
+    margin-block: 0;
+    width: 35%;
+  }
+
+  .hero__button__container {
+    left: 165px;
+  }
+
+  .location__content {
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+  }
+
+  .location__description {
+    width: 55%;
+  }
+}
